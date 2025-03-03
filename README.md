@@ -14,4 +14,4 @@ Welcome to **BuildMate**, a modern landing page for a construction materials and
 
 ---
 
-🚀 **Enjoy building with BuildMate!**
+**Enjoy building with BuildMate!**
