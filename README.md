@@ -12,6 +12,16 @@ Welcome to **BuildMate**, a modern landing page for a construction materials and
 - **Contact Section** with a working form.
 - **Footer** containing social media links and additional information.
 
+## 📸 Screenshots
+### Home Page
+![Home Page](assets/screenshots/readme_image1.png)
+
+### Services Section
+![Services Section](assets/screenshots/readme_image2.png)
+
+## 🔗 Live Demo
+Check out the deployed site: [BuildMate Live](https://korn1evski.github.io/tum_web_lab2/)
+
 ---
 
 **Enjoy building with BuildMate!**
