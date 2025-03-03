@@ -3,6 +3,7 @@
 Welcome to **BuildMate**, a modern landing page for a construction materials and services company. This project provides a visually appealing and fully responsive website designed to showcase products, services, and testimonials while enabling users to get in touch.
 
 ## 🚀 Features
+
 - **Responsive Navigation Bar** with quick access to all sections.
 - **Hero Section** with a high-quality background image and clear call-to-action.
 - **About Section** presenting the company's mission and values.
@@ -13,13 +14,17 @@ Welcome to **BuildMate**, a modern landing page for a construction materials and
 - **Footer** containing social media links and additional information.
 
 ## 📸 Screenshots
-### Home Page
-![Home Page](assets/screenshots/readme_image1.png)
+
+### Hero Section
+
+![Home Page](assets/readme_image1.png)
 
 ### Services Section
-![Services Section](assets/screenshots/readme_image2.png)
+
+![Services Section](assets/readme_image2.png)
 
 ## 🔗 Live Demo
+
 Check out the deployed site: [BuildMate Live](https://korn1evski.github.io/tum_web_lab2/)
 
 ---
