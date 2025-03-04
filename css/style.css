@@ -213,17 +213,21 @@ body {
 /* Testimonials & Contact Section */
 .testimonials-contact {
   display: flex;
-  gap: 40px;
-  justify-content: center;
-  width: 90%;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%; /* Ensure it doesn't shrink */
+  margin: 0 auto;
 }
+
 .testimonials,
 .contact {
-  flex: 1;
-  padding: 20px;
-  max-width: 600px;
+  flex: 1; /* Make them equal width */
+  width: 50%; /* Force both sections to take equal space */
+  max-width: 100%; /* Prevent shrinking */
+  box-sizing: border-box;
 }
+
 /* Testimonial Slider */
 /* Testimonials Section */
 .testimonial-slider {
@@ -328,6 +332,10 @@ footer {
   top: 20px;
 }
 
+.mobile-exclusive {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .about .container {
     flex-direction: column;
@@ -344,12 +352,16 @@ footer {
 
   .testimonials-contact {
     flex-direction: column;
-    width: 100%;
+    margin: 25px 0;
   }
 
   .testimonials,
   .contact {
     width: 100%;
+  }
+
+  .testimonial-slider {
+    margin-bottom: 20px;
   }
 
   /*Hero Section*/
@@ -419,5 +431,27 @@ footer {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.1s;
+  }
+
+  .mobile-exclusive {
+    display: block;
+    background: #f4a261;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .mobile-exclusive h2 {
+    font-size: 1.8rem;
+  }
+
+  .mobile-exclusive p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .mobile-exclusive .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 }
