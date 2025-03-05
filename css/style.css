@@ -217,7 +217,7 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 100%; /* Ensure it doesn't shrink */
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 .testimonials,
@@ -454,4 +454,78 @@ footer {
     padding: 12px 24px;
     font-size: 1rem;
   }
+}
+
+#mascot {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  z-index: 99999 !important;
+  opacity: 0;  /* Initially hidden */
+  transform: scale(0.8); /* Start slightly smaller */
+  display: none; /* Prevent flickering */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Mascot Appears Smoothly */
+.mascot-visible {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  display: block !important;
+}
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Wave Animation */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply bouncing animation */
+#mascot-img {
+  animation: bounce 1s infinite;
+}
+
+/* Show Mascot Hover Message */
+#mascot-message {
+  display: none;
+  position: absolute;
+  bottom: 130%;
+  right: -500%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Show message on hover */
+#mascot:hover #mascot-message {
+  display: block;
 }
