@@ -346,6 +346,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .about-buildmate-text > .text-primary {
+    margin-top: 20px;
+  }
   .about .container {
     flex-direction: column;
   }
