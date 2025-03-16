@@ -10,6 +10,15 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header Section -->
@@ -137,29 +146,63 @@
       </div>
     </section>
 
-    <!-- Testimonials & Contact Section (Two-Column Layout) -->
     <div class="testimonials-contact">
-      <section class="testimonials" id="testimonials">
-        <div class="container">
-          <h2>What Our Clients Say</h2>
-          <div class="testimonial-slider">
-            <button class="testimonial-prev" onclick="prevTestimonial()">
-              &#10094;
-            </button>
-            <div class="testimonial active">
-              <p>
-                “BuildMate provided excellent service and high-quality materials
-                for our project.”
-              </p>
-              <span>- John Doe, Contractor</span>
+      <section class="testimonials py-5" id="testimonials">
+        <div class="container text-center">
+          <h2 class="mb-4">What Our Clients Say</h2>
+          <div
+            id="testimonialCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    “BuildMate provided excellent service and high-quality
+                    materials for our project.”
+                  </p>
+                  <span class="testimonial-author">- John Doe, Contractor</span>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    “Great pricing and fast delivery. Highly recommended!”
+                  </p>
+                  <span class="testimonial-author"
+                    >- Jane Smith, Architect</span
+                  >
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    “Outstanding customer support and seamless ordering
+                    process.”
+                  </p>
+                  <span class="testimonial-author"
+                    >- Mark Johnson, Engineer</span
+                  >
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    “The best construction materials supplier in the region!”
+                  </p>
+                  <span class="testimonial-author"
+                    >- Emily White, Developer</span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="testimonial">
-              <p>“Great pricing and fast delivery. Highly recommended!”</p>
-              <span>- Jane Smith, Architect</span>
-            </div>
-            <button class="testimonial-next" onclick="nextTestimonial()">
-              &#10095;
-            </button>
           </div>
         </div>
       </section>
@@ -200,5 +243,7 @@
       <div id="mascot-message">👋 Hey there! Need construction help?</div>
     </div>
   </body>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </html>

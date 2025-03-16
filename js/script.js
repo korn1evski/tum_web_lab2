@@ -52,16 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // Delay appearance (5 seconds)
   setTimeout(() => {
-    mascot.style.display = "block"; // Ensure it's visible
+    mascot.style.display = "block";
     setTimeout(() => {
       mascot.classList.add("mascot-visible");
       mascotImg.style.animation = "bounce 1s infinite";
-    }, 100); // Slight delay for smooth transition
-  }, 5000); // 5000ms = 5 seconds delay
+    }, 100);
+  }, 5000); 
 
-  // Rotate and wave on click
   mascot.addEventListener("click", function () {
     mascotImg.style.animation = "wave 0.8s";
     setTimeout(() => {
